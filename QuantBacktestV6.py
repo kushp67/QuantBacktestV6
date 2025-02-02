@@ -748,7 +748,7 @@ def main():
 
         st.markdown("---")
        
-                st.subheader("Strategy vs. Buy & Hold Comparison")
+        st.subheader("Strategy vs. Buy & Hold Comparison")
         fig2 = plot_buy_hold_comparison(portfolio, data, initial_capital)
         st.pyplot(fig2)
 
