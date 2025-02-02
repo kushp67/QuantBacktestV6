@@ -747,15 +747,7 @@ def main():
         calmar = compute_calmar_ratio(annual_return, max_dd)
 
         st.markdown("---")
-        st.subheader("Detailed Performance Metrics")
-        st.write({
-            "Max Drawdown (%)": f"{max_dd * 100:.2f}%",
-            "Average Drawdown (%)": f"{avg_dd * 100:.2f}%",
-            "Avg Recovery Time (days)": f"{rec_time:.1f}",
-            "Sortino Ratio": f"{sortino:.2f}",
-            "Calmar Ratio": f"{calmar:.2f}"
-        })
-
+       
         st.subheader("Portfolio Performance")
         fig1 = plot_results(portfolio)
         st.pyplot(fig1)
